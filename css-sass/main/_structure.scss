@@ -1,0 +1,35 @@
+/* =Basic structure
+-------------------------------------------------------------- */
+
+$line-height: 1.33333333333;
+
+/* Body, links, basics */
+html {
+	font-size: 112.5%; // 18px
+}
+body {
+	font-size: 18px;
+	font-size: 1rem;
+	text-rendering: optimizeLegibility;
+	color:#2a0000;
+  padding:0 5%;
+  position: relative;
+  //@include background(image-url("linen/linen.png"));
+  //@include background(image-url("subtle_dots/subtle_dots.png"));
+  @include background(image-url("lines.png"));
+  //@include background(image-url("subtle_stripes/subtle_stripes.png") top center repeat);
+  //@include background(image-url("subtle_surface/subtle_surface.png"));
+}
+
+h1, h2, h3, h4, h5, h6, strong, dt, th, b {
+  font-style: normal;
+  font-weight: 600;
+  .wf-loading & {
+    font-weight: normal;
+  }
+}
+
+p {
+  margin-bottom:12px;
+  margin-bottom:(2/3)+rem; // 12px
+}

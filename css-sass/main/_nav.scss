@@ -1,0 +1,10 @@
+#skip, #searchform label, h3.widget-title {
+  @include visuallyhidden();
+}
+
+ul.xoxo {
+  list-style: none;
+  ul {
+    list-style: none;
+  }
+}
